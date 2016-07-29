@@ -21,6 +21,7 @@ this.Notification = function() {
 	 * @var {string} background This is the background shown for each notification.
 	 * @var {string} fontColor The color of the font used in the notification.
 	 * @var {string} fontSize The size of the font used in the notification.
+     * @var {string} type This is how the nofitication increments at the end of the animation
 	 */
     var defaults = {
         choice: "advancedAlert", //'advancedAlert', 'simpleAlert', 'fadeDown', 'fadeUp'
@@ -99,6 +100,7 @@ function createNotification() {
      */
     if (this.options.choice === "simpleAlert") {
         $alertHolder.addClass("animated tada");
+        setTimeout(changeText, 1000);
     } else if (this.options.choice === "advancedAlert") {
         $alertHolder.addClass("advanced");
         setTimeout(changeText, 1200);
@@ -136,7 +138,9 @@ function createNotification() {
 		number = actions;
 		$alertHolder.addClass("action");
 		$('.action').remove();
-	}
+	} else {
+        number = this.options.number;
+    }
 	
 	//adds the notification to the document
     $(docFrag).append(alertHolder);
