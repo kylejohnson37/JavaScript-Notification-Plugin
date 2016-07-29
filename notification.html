@@ -1,0 +1,30 @@
+<html>
+
+<head>
+<link href="notificationcss.css" type="text/css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+
+ <button id="trigger">Button</button>
+
+<script src="notificationScript.js"></script>
+<script>
+
+var button = document.getElementById("trigger");
+
+button.addEventListener('click', function () {
+	var myNotification = new Notification({
+		background: "teal",
+		fontColor: "white",
+		id: "trigger",
+		choice: "advancedAlert",
+		message: "Yay Notification!",
+		type: "none"
+	});
+	myNotification.open();
+});
+</script>
+</body>
+</html>
