@@ -1,0 +1,226 @@
+/**
+* Testing!!!!
+*
+*/
+img#background {
+    height: auto;
+    width: auto;
+    position: relative;
+    display: block;
+    z-index: 2;
+}
+div#knowledge {
+    position: absolute;
+    top: 591px;
+    left: 1006px;
+    z-index: 10;
+    height: 41px;
+    width: 63px;
+}
+div#habits {
+    height: 40px;
+    width: 60px;
+    position: absolute;
+    top: 591px;
+    left: 1094px;
+}
+div#mindset {
+    height: 40px;
+    width: 60px;
+    position: absolute;
+    top: 591px;
+    left: 1184px;
+}
+div#hehe {
+    width: 200px;
+}
+
+/** TESTING */
+
+
+
+button#trigger {
+    position: relative;
+}
+div#NavObjects {
+    background: black;
+    z-index: 1;
+    position: absolute;
+    height: 50px;
+    width: 261px;
+    top: 8px;
+    left: 924px;
+}
+span.obect-item {
+    padding-right: 13px;
+}
+.logo {
+    height: 20px;
+    width: 20px;
+    padding-top: 15px;
+}
+
+#number1 , #number2, #number3, #number4 , #number5, #number6{
+    position: absolute;
+    border-radius: 2px;
+    padding: 1px 5px 4px;
+    height: auto;
+    width: auto;
+    font-size: 12px;
+    z-index: 3;
+}
+
+.animated {
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 95px;
+    margin-bottom: 60px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* Simple Alert*/
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+}
+@keyframes tada {
+    0% {
+        transform: scale(1);
+    }
+    10%,20% {
+        transform: scale(0.9) rotate(-3deg);
+    }
+    30%,50%,70%,90% {
+        transform: scale(2) rotate(3deg);
+    }
+    40%,60%,80% {
+        transform: scale(2) rotate(-3deg);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
+@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: scale(.2);
+    }
+    10%,20% {
+        -webkit-transform: scale(0.9) rotate(-3deg);
+    }
+    30%,50%,70%,90% {
+        -webkit-transform: scale(2) rotate(3deg);
+    }
+    40%,60%,80% {
+        -webkit-transform: scale(2) rotate(-3deg);
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(0);
+    }
+}
+
+/* Advanced Alert*/
+.advanced {
+    -webkit-animation-name: movement;
+    -webkit-animation-duration: 2s;
+    animation-name: movement;
+    animation-duration: 2s;
+}
+@keyframes movement {
+    0% {
+        left: 50%;
+        top: 50%;
+    }
+    25% {
+        left: 50%;
+        top: 50%;
+        transform: scale(3) rotate(3deg);
+    }
+    50% {
+        left: 50%;
+        top: 50%;
+        transform: scale(1) rotate(3deg);
+    }
+}
+@-webkit-keyframes movement {
+    0% {
+        left: 50%;
+        top: 50%;
+    }
+    25% {
+        left: 50%;
+        top: 50%;
+        transform: scale(3) rotate(3deg);
+    }
+    50% {
+        left: 50%;
+        top: 50%;
+        transform: scale(1) rotate(3deg);
+    }
+}
+
+/* Fade Up Option*/
+.fadeUp {
+    -webkit-animation-name: fadeUp;
+    animation-name: fadeUp;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+}
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, -60px);
+    }
+}
+@-webkit-keyframes fadeUp {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, -60px);
+    }
+}
+
+/* Fade Down Option */
+.fadeDown {
+    -webkit-animation-name: fadeDown;
+    animation-name: fadeDown;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+}
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 60px);
+    }
+}
+@-webkit-keyframes fadeDown {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 60px);
+    }
+}
